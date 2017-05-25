@@ -1,4 +1,7 @@
-# Simple Pong Clone
+# Pong
 
-Udemy Course Link:
-https://www.udemy.com/code-your-first-game
+A simple pong clone using HTML5 canvas.
+
+## Screenshot
+
+![](screenshot.png)

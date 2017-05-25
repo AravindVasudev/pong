@@ -42,8 +42,8 @@ function handleMouseClick(evt) {
 
 window.onload = function () {
   canvas = document.getElementById("gameCanvas");
-  canvas.width  = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.width  = window.innerWidth * 0.7;
+  canvas.height = window.innerHeight * 0.7;
   canvasContext = canvas.getContext("2d");
   var framesPerSecond = 30;
   setInterval(function () {
@@ -149,6 +149,7 @@ function drawEverything() {
   //Ball
   colorCircle(ballX, ballY, 10, "white");
 
+  canvasContext.font = "20px monospace";
   canvasContext.fillText(player1Score, 100, 100);
   canvasContext.fillText(player2Score, canvas.width - 100, 100);
 }
